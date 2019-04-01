@@ -1,0 +1,40 @@
+My Thinking About Lambda and Functional Programming
+
+I think the people in this room are more or less heard about the concepts of functional programming
+
+hands up who knows 'Functional Programming'
+
+Although this is a very very technical talk, I hope every one in this room can benefit from my talk.
+
+So before start I want to mention that functional programming is a 'programming paradiam'
+
+And this is I think how this topic is related to every one.
+
+For Commoncode as a technology driven company, we know more and more new start ups and
+technology giant in the market choose to use 'Functional' programming lanaguage such as
+'Scala, Clojure, Elixir' for backend lanaguage of Ruby and Python, or Nodejs.
+
+For recuriters, I think for you more want to know, when you have
+a candidates list 'Functional Programming' in his/her CV, what does it mean? It is a positive sign,
+and why functional programmers are tend to think 'too much'.
+
+For commoncoders.
+If you want to write good modern JS code, functional programming pretty much a must.
+No matter what lanaguage you use, Python ... PHP, understand the ideas of functional
+programming.
+
+---- 2 min
+
+For Designers, and business analyst.
+Sorry basically you can not learn any thing really meaningful, may be some philosophies
+I just want to mention from a programmers view, I see the idea of Atomic design in design
+is very close the idea of functional programming in programming world.
+
+
+First thing first functional programming is not just about writing functions,
+the function in functional programming refers to a 'mathmatical' function that every one
+learns in their which it always return 
+
+Functional programming and its opposite side precedural programming
+
+functional programming is just about writing function
