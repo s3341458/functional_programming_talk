@@ -17,9 +17,7 @@ import {
   Text
 } from 'spectacle';
 
-
 import createTheme from 'spectacle/lib/themes/default';
-
 
 const theme = createTheme(
   {
@@ -34,17 +32,6 @@ const theme = createTheme(
   }
 );
 
-
-//const code = {
-  //deckSample: require('../assets/deck.example')
-//};
-
-
-const images = {
-  formidagon: require('../assets/formidable-logo.svg'),
-  goodWork: require('../assets/good-work.gif')
-};
-
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -54,55 +41,97 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
       >
         <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
-          </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" fit bold>
-            open the presentation/index.js file to get started
-          </Text>
-        </Slide>
-        <Slide bgColor="secondary">
-          <Image src={images.formidagon} width={800} />
-        </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
           <Heading size={4} textColor="secondary">
-            Heading 4
+            Functional Programming
           </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
+          <Appear>
+            <Text margin="10px 0 0" textColor="tertiary" fit bold>
+              Background and basic skills
+            </Text>
+          </Appear>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Standard List
+            Why FP is important
           </Heading>
           <List>
             <Appear>
-              <ListItem>Item 1</ListItem>
+              <ListItem>A new technology trend</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Item 2</ListItem>
+              <ListItem>A candidates skill</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Item 3</ListItem>
+              <ListItem>
+                Help our development (React)
+              </ListItem>
             </Appear>
             <Appear>
-              <ListItem>Item 4</ListItem>
+              <ListItem>Understand functional programmer</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Procedural Programming and OO (opposite side of FP)
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Invented by Engineers</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Bridge between English and machine</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Encourage programmers to known computer</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Have not thought about artificial intelligence</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Functional Programming and logical programming
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Invented by mathmaticians and AI researchers</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Bridge between formula and machine</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Do not care about computer(utopia)</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Util 2009 what does PP produce
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>OS: Linux, MacOS, Windows</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Desktop Applications: Word Office</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Games</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Most Enterprise Softwares</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Util 2009 what does FP produce
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Nothing but some rarely used libraries</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -111,9 +140,6 @@ export default class Presentation extends React.Component {
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>
           </BlockQuote>
-        </Slide>
-        <Slide>
-          <Image src={images.goodWork} width={500} />
         </Slide>
       </Deck>
     );

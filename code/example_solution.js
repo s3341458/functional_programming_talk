@@ -1,7 +1,7 @@
 const data = [
   {
     type: 'book',
-    name: 'C programming',
+    name: 'Python programming',
     length: 22,
     width: 10,
     height: 10
@@ -22,7 +22,7 @@ const data = [
   },
   {
     type: 'paper',
-    name: 'C programming',
+    name: 'white paper',
     length: 10,
     width: 10
   },
@@ -39,8 +39,8 @@ const data = [
     width: 10
   }
 ];
-// post fee of paper is square size * 10
-// post fee of book is cubic size * 100
+// post fee of paper is square size * 100
+// post fee of book is cubic size * 10
 // total cost 9600
 
 const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
@@ -85,6 +85,3 @@ const postCost = compose(
 );
 
 console.log(postCost(data));
-
-
-`
