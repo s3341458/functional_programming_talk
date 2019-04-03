@@ -42,7 +42,8 @@ const functionMutateData = (data) => {
 };
 
 const referenceOfMutableData = functionMutateData(mutableData);
-// returnData.count == mutableData.count
+// referenceOfMutableData.count == mutableData.count
+// ? del mutableData
 
 const functionWillNotMutateData = (data) => ({
   ...data,
@@ -50,7 +51,7 @@ const functionWillNotMutateData = (data) => ({
 });
 
 const notReferenceOfMutableData = functionWillNotMutateData(mutableData);
-// returnData.count > mutableData.count
+// notReferenceOfMutableData.count > mutableData.count
 
 // functions are data
 const functionsDict = {

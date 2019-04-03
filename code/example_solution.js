@@ -45,9 +45,6 @@ const data = [
 
 const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
 
-const cubicSize = (height) => (width) => (length) => height * width * length;
-const squareSize = cubicSize(1);
-
 const applyFunctionByKeys = (f) => (keys) => (obj) =>
   keys.reduce((gf, key) => gf(obj[key]), f);
 
@@ -56,6 +53,8 @@ const map = (f) => (a) => a.map(f);
 const add = (x) => (y) => x + y;
 const sum = (a) => a.reduce((x, y) => add(x)(y));
 
+const cubicSize = (height) => (width) => (length) => height * width * length;
+const squareSize = cubicSize(1);
 
 const bookSize = applyFunctionByKeys(cubicSize)(['height', 'width', 'length']);
 const bookSizePrice = (size) => size * 10;
